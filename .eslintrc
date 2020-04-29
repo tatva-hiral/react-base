@@ -1,0 +1,66 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "plugin:prettier/recommended", "prettier/react"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "rules": {
+    "no-param-reassign": "off",
+    "function-paren-newline": "off",
+    "arrow-parens": ["error", "as-needed"],
+    "arrow-body-style": [2, "as-needed"],
+    "comma-dangle": ["error", "only-multiline"],
+    "import/no-extraneous-dependencies": 0,
+    "import/prefer-default-export": 0,
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "no-underscore-dangle": 0,
+    "react/jsx-props-no-spreading": 0,
+    "max-len": 0,
+    "no-console": 0,
+    "react/forbid-prop-types": 0,
+    "react/jsx-curly-brace-presence": "off",
+    "react/jsx-first-prop-new-line": [2, "multiline"],
+    "react/jsx-filename-extension": 0,
+    "react/require-default-props": 0,
+    "react/self-closing-comp": 0,
+    "redux-saga/no-yield-in-race": 2,
+    "redux-saga/yield-effects": 2,
+    "jsx-a11y/anchor-is-valid": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "global-require": 0,
+    "allowAfterThis": 0,
+    "no-empty": 0
+  },
+  "plugins": ["redux-saga", "react", "jsx-a11y", "jest"],
+  "globals": {
+    "jest": true,
+    "expect": true,
+    "global": true,
+    "window": true,
+    "document": true,
+    "localStorage": true,
+    "fetch": true,
+    "sinon": true,
+    "debug": true,
+    "React": true,
+    "PropTypes": true,
+    "shallow": true,
+    "mount": true,
+    "render": true,
+    "_": true,
+    "R": true,
+    "sandbox": true,
+    "helpers": true,
+    "defer": true
+  },
+  "root": true
+}
